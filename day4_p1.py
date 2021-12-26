@@ -42,6 +42,9 @@ def mark_boards(n, boards, markings):
 
 
 def is_bingo(boards, markings):
+    """
+    Return the boards that hits the first bingo
+    """
     for idx in range(NUM_BOARDS):
 
         # check rows
@@ -79,6 +82,3 @@ for i in range(NUM_ROWS):
             s += int(BOARDS[board_idx][i][j])
 
 print(int(n) * s)
-
-
-# -- Part 2 -- #

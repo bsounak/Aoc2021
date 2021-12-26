@@ -1,9 +1,7 @@
 import time
 import aoc_data
 
-data = aoc_data.load(2).rstrip(b"\n").split(b"\n")
-data = [v.decode("utf-8") for v in data]
-
+data = aoc_data.load(2).rstrip("\n").split("\n")
 
 # -- Part 1 -- #
 movements = dict(forward=0, down=0, up=0)

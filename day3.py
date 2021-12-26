@@ -2,7 +2,7 @@ import time
 import aoc_data
 
 # All the bits are concatenated
-data = aoc_data.load(3).replace(b"\n", b"").decode("utf-8")
+data = aoc_data.load(3).replace("\n", "")
 # Each code is of length NUMBER_OF_BITS
 NUMBER_OF_BITS = 12
 
@@ -30,9 +30,7 @@ print(int(s, 2) * int(ocs, 2))
 
 # -- Part 2 -- #
 NUMBER_OF_BITS = 12
-data = aoc_data.load(3).rstrip(b"\n").split(b"\n")
-data = [v.decode("utf-8") for v in data]
-
+data = aoc_data.load(3).rstrip("\n").split("\n")
 
 def get_most_frequent_bit_at_position_O2(position: int, data: list):
     v = ""
